@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Drumkit</h1>
+    <h1>Drumkit 123</h1>
     <h5>Press any key below on keyboard or through mouse</h5>
     <div class="keys">
       <Key v-for="(key, i) in keys" :sound="key" :key="i" />
