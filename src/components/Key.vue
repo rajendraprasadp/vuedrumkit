@@ -1,7 +1,5 @@
 <template>
-  <button :class="`key ${clicked ? 'clicked' : ''}`" @click="play">
-    {{ sound.letter }}
-  </button>
+  <button :class="`key ${clicked ? 'clicked' : ''}`" @click="play">{{ sound.letter }}</button>
 </template>
 
 <script>
@@ -17,7 +15,10 @@ export default {
     play() {
       this.clicked = true;
       new Audio(this.sound.audio).play();
-      this.clicked = false;
+      setTimeout(() => {
+        this.clicked = false;
+      }, 100)
+
     },
   },
   mounted() {
