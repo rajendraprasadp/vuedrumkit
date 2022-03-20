@@ -17,9 +17,7 @@ export default {
     play() {
       this.clicked = true;
       new Audio(this.sound.audio).play();
-      setTimeout(() => {
-        this.clicked = false;
-      }, 30);
+      this.clicked = false;
     },
   },
   mounted() {
