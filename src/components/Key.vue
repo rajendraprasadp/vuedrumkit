@@ -19,7 +19,7 @@ export default {
       new Audio(this.sound.audio).play();
       setTimeout(() => {
         this.clicked = false;
-      }, 200);
+      }, 50);
     },
   },
   mounted() {
